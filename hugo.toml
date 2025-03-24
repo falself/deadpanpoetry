@@ -1,0 +1,8 @@
+baseURL = "https://deadpanpoetry.org/"
+languageCode = "en-us"
+title = "Deadpan Poetry"
+theme = "bearblog"
+
+[params]
+  description = "In the world, but not of the world"
+  author = "Denton Foss"
