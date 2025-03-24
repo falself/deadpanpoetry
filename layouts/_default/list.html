@@ -3,7 +3,13 @@
     <h2>{{ .Title }}</h2>
     <ul>
       {{ range .Pages }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li>
+		  <a href="{{ .Permalink }}">{{ .Title }}</a>
+		  <!-- Add date after the title -->
+		  <span style="margin-left: 0.5rem; font-size: 0.85rem; color: #666;">
+		    ({{ .Date.Format "Jan 2, 2006" }})
+		  </span>
+		</li>
       {{ end }}
     </ul>
   </section>
