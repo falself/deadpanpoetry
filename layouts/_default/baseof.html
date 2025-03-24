@@ -1,14 +1,12 @@
-
-
-
+{{ define "baseof" }}
 <!DOCTYPE html>
 <html lang="en">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deadpan Poetry</title>
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <style>
-       
+      /* Base styling: minimalist, typewriter-inspired, and centered container */
       body {
           margin: 0;
           font-family: 'Courier New', Courier, monospace;
@@ -17,7 +15,7 @@
           line-height: 1.6;
           padding: 0 1rem;
       }
-       
+      /* Container to center content */
       .container {
           max-width: 800px;
           margin: 0 auto;
@@ -45,14 +43,14 @@
       article {
           text-align: left;
       }
-       
+      /* Footer styling */
       footer {
           font-size: 0.8rem;
           border-top: 1px solid #ccc;
           margin-top: 2rem;
           padding-top: 1rem;
       }
-       
+      /* Dark mode support */
       @media (prefers-color-scheme: dark) {
           body {
               background-color: #121212;
@@ -67,31 +65,23 @@
   <body>
     <div class="container">
       <header>
-        <h1>Deadpan Poetry</h1>
-        
-        <p class="tagline">In the world, but not of the world</p>
+        <h1>{{ .Site.Title }}</h1>
+        <!-- Tagline is optional; you can set it in your config -->
+        {{ with .Site.Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}
         <nav>
-            <a href="/">Home</a>
-            <a href="/posts/">Posts</a>
-            <a href="/about/">About</a>
-            <a href="/contact/">Contact</a>
+            <a href="{{ "/" | relLangURL }}">Home</a>
+            <a href="{{ "/posts/" | relLangURL }}">Posts</a>
+            <a href="{{ "/about/" | relLangURL }}">About</a>
+            <a href="{{ "/contact/" | relLangURL }}">Contact</a>
         </nav>
       </header>
       <main>
-        
-  <section>
-    <h2>Posts</h2>
-    <ul>
-      
-        <li><a href="http://localhost:1313/posts/you-may-keep-foot/">You May Keep the Foot</a></li>
-      
-    </ul>
-  </section>
-
+        {{ block "main" . }}{{ end }}
       </main>
       <footer>
-        <p>&copy; 2025 Deadpan Poetry. All rights reserved.</p>
+        <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
       </footer>
     </div>
   </body>
 </html>
+{{ end }}
