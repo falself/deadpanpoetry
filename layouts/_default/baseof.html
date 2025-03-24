@@ -32,32 +32,47 @@
           color: #666;
           margin-top: 0.25rem;
       }
-      nav a {
-          margin-right: 1rem;
-          text-decoration: none;
-          color: inherit;
-      }
       main {
           margin: 2rem 0;
       }
       article {
           text-align: left;
       }
-      /* Footer styling */
       footer {
           font-size: 0.8rem;
           border-top: 1px solid #ccc;
           margin-top: 2rem;
           padding-top: 1rem;
       }
+      
+      /* --- Link colors (light mode) --- */
+      a {
+          color: #006666; /* pick whatever you like */
+          text-decoration: none;
+      }
+      a:hover {
+          text-decoration: underline;
+      }
+      a:visited {
+          color: #006666;
+      }
+
       /* Dark mode support */
       @media (prefers-color-scheme: dark) {
           body {
-              background-color: #121212;
+              background-color: #2a2a2a; /* lighter gray instead of pure black */
               color: #eee;
           }
           footer {
               border-top: 1px solid #444;
+          }
+
+          /* Dark mode link colors */
+          a {
+              color: #cfcfcf;
+          }
+          a:visited {
+              color: #cfcfcf;
           }
       }
     </style>
@@ -66,13 +81,13 @@
     <div class="container">
       <header>
         <h1>{{ .Site.Title }}</h1>
-        <!-- Tagline is optional; you can set it in your config -->
+        <!-- Tagline is optional; set in your config -->
         {{ with .Site.Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}
         <nav>
-            <a href="{{ "/" | relLangURL }}">Home</a>
-            <a href="{{ "/posts/" | relLangURL }}">Posts</a>
-            <a href="{{ "/about/" | relLangURL }}">About</a>
-            <a href="{{ "/contact/" | relLangURL }}">Contact</a>
+          <a href="{{ "/" | relLangURL }}">Home</a>
+          <a href="{{ "/posts/" | relLangURL }}">Posts</a>
+          <a href="{{ "/about/" | relLangURL }}">About</a>
+          <a href="{{ "/contact/" | relLangURL }}">Contact</a>
         </nav>
       </header>
       <main>
