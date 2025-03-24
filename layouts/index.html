@@ -9,7 +9,7 @@
   <section class="post-list">
     <h2>Latest Posts</h2>
     <ul>
-      {{ range first 5 .Pages }}
+      {{ range first 5 (sort (where .Site.RegularPages "Section" "posts") "Date" "desc") }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
