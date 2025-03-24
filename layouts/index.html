@@ -10,7 +10,13 @@
     <h2>Latest Posts</h2>
     <ul>
       {{ range first 5 (sort (where .Site.RegularPages "Section" "posts") "Date" "desc") }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li>
+		  <a href="{{ .Permalink }}">{{ .Title }}</a>
+		  <!-- Add date after the title -->
+		  <span style="margin-left: 0.5rem; font-size: 0.85rem; color: #666;">
+		    ({{ .Date.Format "Jan 2, 2006" }})
+		  </span>
+		</li>
       {{ end }}
     </ul>
   </section>
