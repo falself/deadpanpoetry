@@ -1,9 +1,16 @@
 baseURL = "https://deadpanpoetry.org/"
 languageCode = "en-us"
 title = "Deadpan Poetry"
-#theme = "bearblog"
 
 [params]
   tagline = "In the world, but not of the world"
   # Uncomment and set the path if you have a header image:
   header_image = "/images/header2.jpg" 
+
+[frontmatter]
+default = "yaml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
