@@ -6,4 +6,4 @@ title = "Deadpan Poetry"
 [params]
   tagline = "In the world, but not of the world"
   # Uncomment and set the path if you have a header image:
-  header_image = "/images/header.jpg" 
+  header_image = "/images/header.jpg?v=2" 
