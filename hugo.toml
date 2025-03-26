@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Deadpan Poetry"
 
 [params]
-  tagline = "In the world, but not of the world"
   # Uncomment and set the path if you have a header image:
   header_image = "/images/header2.jpg" 
 

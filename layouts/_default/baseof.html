@@ -52,7 +52,7 @@
       }
       /* --- Link colors (light mode) --- */
       a {
-          color: #006666; /* pick whatever you like */
+          color: #006666;
           text-decoration: none;
       }
       a:hover {
@@ -65,14 +65,12 @@
       /* Dark mode support */
       @media (prefers-color-scheme: dark) {
           body {
-              background-color: #2a2a2a; /* lighter gray instead of pure black */
+              background-color: #2a2a2a;
               color: #eee;
           }
           footer {
               border-top: 1px solid #444;
           }
-
-          /* Dark mode link colors */
           a {
               color: #cfcfcf;
           }
@@ -81,13 +79,57 @@
           }
       }
     </style>
+
+    <script>
+      const taglines = [
+        "a moth in a suit, requesting clarification",
+        "assumes all furniture has an inner life",
+        "not approved for devotional use",
+        "a gentle haunting conducted under fluorescent light",
+        "a form of controlled failure dressed in evening wear",
+        "arrived five minutes early and refuses to leave",
+        "the preferred dialect of malfunctioning robots and certain geometries",
+        "for use only during minor apocalypses",
+        "break glass in case of cataclysmic epiphany",
+        "a small and mostly manageable outbreak of sincerity",
+        "a think-tank massaging the mathematics of raw frivolity",
+        "a lodestone that ultimately repels all hope of productivity",
+        "is not responsible for what it implies",
+        "what remains after the meeting is adjourned",
+        "it will not make sense, but it will file correctly",
+        "this is not an instruction manual, though some have tried",
+        "contains trace amounts of regret and formaldehyde",
+        "it’s not a warning, it’s a weather report",
+        "please keep your arms inside the poem at all times",
+        "you may feel symptoms of recognition do not be alarmed",
+        "the sound a fax machine makes when no one is listening",
+        "it never blinks, but it is often mistaken for a lid",
+        "best enjoyed with a cold cup of something you don’t remember making",
+        "you'd fight a small bear for this",
+        "a masturbatory affair",
+        "the literary equivalent of warm lettuce water",
+        "that feeling when you wave back at someone who wasn’t waving at you",
+        "that feeling when someone gives you free drugs",
+        "the party where everyone’s just a little too into board games",
+        "the taste of drywall with the texture of betrayal",
+        "in the world, not of the world",
+        "more disappointing than a vending machine eating your last dollar and giving you nothing but a philosophical crisis"
+      ];
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const taglineElement = document.getElementById("rotating-tagline");
+        if (taglineElement) {
+          const random = Math.floor(Math.random() * taglines.length);
+          taglineElement.textContent = taglines[random];
+        }
+      });
+    </script>
   </head>
   <body>
     <div class="container">
       <header>
         <h1>{{ .Site.Title }}</h1>
-        <!-- Tagline is optional; set in your config -->
-        {{ with .Site.Params.tagline }}<p class="tagline">{{ . }}</p>{{ end }}
+        <p id="rotating-tagline" class="tagline"></p>
         <nav>
           <a href="{{ "/" | relLangURL }}">Home</a>
           <a href="{{ "/posts/" | relLangURL }}">Posts</a>
