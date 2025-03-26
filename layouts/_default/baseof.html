@@ -141,7 +141,10 @@
         {{ block "main" . }}{{ end }}
       </main>
       <footer>
-        <p>&copy; {{ now.Format "2006" }} Zach Foss.</p>
+        <p>
+          &copy; {{ now.Format "2006" }} Zach Foss.
+          <a href="/index.xml" target="_blank" style="margin-left: 1rem; font-size: 0.85rem; color: #888;">RSS</a>
+        </p>
       </footer>
     </div>
   </body>
