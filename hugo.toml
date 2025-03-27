@@ -16,3 +16,4 @@ default = "yaml"
 
 [outputs]
   home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
