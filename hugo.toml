@@ -13,6 +13,7 @@ default = "yaml"
   [markup.goldmark]
     [markup.goldmark.renderer]
       hardWraps = true
+      unsafe = true
 
 [outputs]
   home = ["HTML", "RSS"]
