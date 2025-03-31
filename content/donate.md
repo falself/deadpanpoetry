@@ -3,7 +3,7 @@ date: "2025-03-30T20:10:58-04:00"
 title: "Donate"
 ---
 
-#The Ledger of Minor Affections
+# The Ledger of Minor Affections
 
 You’ve reached The Ledger of Minor Affections, an unofficial registry of small, unclassified gratitudes.
 

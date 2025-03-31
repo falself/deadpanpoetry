@@ -7,7 +7,7 @@
   {{ end }}
 
   <section class="post-list">
-    <h2>Latest Posts</h2>
+    <h2>Latest Transmissions</h2>
     <ul>
       {{ range first 5 (sort (where .Site.RegularPages "Section" "posts") "Date" "desc") }}
         <li>
