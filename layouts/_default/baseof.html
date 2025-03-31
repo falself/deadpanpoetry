@@ -27,6 +27,13 @@
           font-size: 2rem;
           margin: 0;
       }
+      h1 a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1 a:hover {
+        text-decoration: underline;
+      }    
       .tagline {
           font-size: 1rem;
           color: #666;
@@ -128,7 +135,7 @@
   <body>
     <div class="container">
       <header>
-        <h1>{{ .Site.Title }}</h1>
+        <h1><a href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a></h1>
         <p id="rotating-tagline" class="tagline"></p>
         <nav>
           <a href="{{ "/" | relLangURL }}">Zero</a> | 
