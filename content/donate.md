@@ -27,6 +27,6 @@ Funds are used exclusively for:
 All entries are anonymous unless otherwise compelled by dream logic or outdated regulation.
 No one is watching. The drawer thanks you in advance, regardless.
 
-[File an Affection](https://ko-fi.com/zachfoss)
+## 🗄️ [File an Affection](https://ko-fi.com/zachfoss)
 
 *This ledger is not tax-deductible, nor spiritually binding. Use only in cases of persistent unease or excess gratitude.*
