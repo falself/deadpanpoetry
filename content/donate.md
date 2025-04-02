@@ -15,11 +15,11 @@ Transmissions will proceed as designated, inexorably.
 These offerings will not grant you exclusive access, celestial reward, or digital stickers. They will, however, be noted quietly and without ceremony in a drawer that does not lock properly.
 
 Funds are used exclusively for:
-	•	Archival maintenance
-	•	Neural hydration
-	•	Emergency metaphors
-	•	Mild snacks during philosophical impasses
-	•	Stamps
+- Archival maintenance
+- Neural hydration
+- Emergency metaphors
+- Mild snacks during philosophical impasses
+- Stamps
 
 All entries are anonymous unless otherwise compelled by dream logic or outdated regulation. No one is watching. The drawer thanks you in advance, regardless.
 
