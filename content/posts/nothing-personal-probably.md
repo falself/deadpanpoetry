@@ -1,6 +1,6 @@
 ---
 date: "2025-04-01T15:31:29-04:00"
-title: "Nothing Personal Probably"
+title: "Nothing Personal, Probably"
 ---
 
 ![Nothing Personal, Probably](/images/nothing-personal.jpg)
