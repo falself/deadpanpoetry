@@ -3,7 +3,7 @@ date: "2025-03-30T00:34:38-04:00"
 title: "Heaven, as It Happens"
 ---
 
-# HEAVEN, AS IT HAPPENS
+# Heaven, as It Happens
 
 There is good news.
 On the seventh day,
@@ -47,7 +47,7 @@ We stopped measuring things.
 Direction is a feeling now.
 Distances collapse politely.
 
-Our final evolution: a holy science—
-soft, reversible, and certified compostable.
+The final evolution is soft,
+reversible, and certified compostable.
 Everyone remembers being held,
 and no one is ever asked what they *do.*
