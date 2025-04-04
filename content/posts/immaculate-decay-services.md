@@ -22,7 +22,7 @@ gently, but with unmistakable contempt.
 
 Mention specific textures or aromas—
 (e.g., butter-nation, new mess jars,
-spatial disguises, mettle jellyfish, itty-bitties)—
+spatial disguises, mettle jellyfish, itty-bitties)
 to receive a complimentary access violation!
 
 Exclusions may apply to dead things.
