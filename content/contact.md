@@ -13,4 +13,4 @@ zach@deadpanpoetry.org
 
 **This way to the subterranean feed:**
 
-                        ↓↓↓ 
+↓↓↓ 
