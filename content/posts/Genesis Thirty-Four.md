@@ -1,6 +1,6 @@
 ---
 date: "2025-04-05T11:44:12-04:00"
-title: "Genesis Thirty Four"
+title: "Genesis Thirty-Four"
 ---
 
 # Genesis Thirty-Four
