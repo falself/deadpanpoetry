@@ -27,4 +27,4 @@ All works, unless otherwise noted, are the creations of **Zach Foss**—a name a
 
 Images are used by permission, license, or conjured with the assistance of a largely cooperative neural apparition, bound by spell and silicon. Opinions expressed herein are solely those of the author and do not reflect the views of any known institutions, defunct governments, corporate weather systems, or sentient elevator panels.
 
-For those seeking meaning, direction, or a coherent narrative—good luck.
+For those seeking meaning, direction, or a coherent narrative—good luck with that.
