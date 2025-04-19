@@ -19,3 +19,12 @@ default = "yaml"
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
   taxonomy  = ["RSS"]
+
+[mediaTypes."application/rss+xml"]
+  suffixes = ["xml"]
+
+[outputFormats.RSS]
+  mediaType = "application/rss+xml"
+  baseName = "index"
+  isPlainText = false
+  notAlternative = true  

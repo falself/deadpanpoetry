@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+{{- printf "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" | safeHTML }}
 <rss version="2.0"
+     xmlns:test="https://deadpanpoetry.org/test-namespace"
      xmlns:atom="http://www.w3.org/2005/Atom"
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
@@ -17,12 +18,8 @@
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
       <guid>{{ .Permalink }}</guid>
-      <description><![CDATA[
-        {{ .Summary | safeHTML }}
-      ]]></description>
-      <content:encoded><![CDATA[
-        {{ .Content | safeHTML }}
-      ]]></content:encoded>
+      <description>{{ .Summary | html }}</description>
+      <content:encoded>{{ .Content | html }}</content:encoded>
     </item>
     {{ end }}
 
