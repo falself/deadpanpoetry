@@ -1,4 +1,3 @@
-{{- $pctx := . -}}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
      xmlns:atom="http://www.w3.org/2005/Atom"
@@ -6,7 +5,7 @@
   <channel>
     <title>{{ .Site.Title }}</title>
     <link>{{ .Site.BaseURL }}</link>
-    <description>Recent content on {{ .Site.Title }}</description>
+    <description>Latest on {{ .Site.Title }}</description>
     <generator>Hugo</generator>
     <language>{{ .Site.Language.Lang }}</language>
     <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</lastBuildDate>
@@ -26,5 +25,6 @@
       ]]></content:encoded>
     </item>
     {{ end }}
+
   </channel>
 </rss>
