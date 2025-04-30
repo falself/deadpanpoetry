@@ -23,6 +23,6 @@ default = "yaml"
 
 [outputFormats.RSS]
   mediaType = "application/rss+xml"
-  baseName = "index"
+  baseName = "feed"
   isPlainText = false
   notAlternative = true  
