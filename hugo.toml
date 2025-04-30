@@ -17,8 +17,6 @@ default = "yaml"
 
 [outputs]
   home = ["HTML", "RSS"]
-  section = ["HTML", "RSS"]
-  taxonomy  = ["RSS"]
 
 [mediaTypes."application/rss+xml"]
   suffixes = ["xml"]
