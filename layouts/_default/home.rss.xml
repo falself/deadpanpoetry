@@ -12,14 +12,18 @@
     <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</lastBuildDate>
     <atom:link href="{{ .Site.BaseURL }}index.xml" rel="self" type="application/rss+xml"/>
 
-    {{ range first 15 .Pages }}
+    {{ range first 15 ( where .Site.RegularPages "Section" "posts" ) }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
       <guid>{{ .Permalink }}</guid>
-      <description>{{ .Summary | html }}</description>
-      <content:encoded>{{ .Content | html }}</content:encoded>
+      <description><![CDATA[
+        {{ .Summary | safeHTML }}
+      ]]></description>
+      <content:encoded><![CDATA[
+        {{ .Content | safeHTML }}
+      ]]></content:encoded>
     </item>
     {{ end }}
 
