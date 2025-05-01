@@ -15,9 +15,8 @@
       <guid>{{ .Permalink }}</guid>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}</pubDate>
       <description>{{ .Summary | plainify }}</description>
-      <content:encoded><![CDATA[{{ .Content | safeHTML | replaceRE "(?i)(src=\")(/[^\\\"]+)" (print "${1}" .Site.BaseURL "${2}") }}]]></content:encoded>
+      <content:encoded><![CDATA[{{ .Content | safeHTML | absURL }}]]></content:encoded>
     </item>
     {{ end }}
   </channel>
 </rss>
-
